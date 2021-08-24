@@ -1,0 +1,27 @@
+@media (max-width: 475px) {
+  .group {
+    width: 70%;
+  }
+  body {
+    padding: 5px;
+  }
+  footer {
+    font-size: .6rem;
+    padding: 6px;
+  }
+}
+@media (max-width: 430px) {
+  .group {
+    width: 75%;
+  }
+}
+@media (max-width: 400px) {
+  .group {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .group {
+    width: 85%;
+  }
+}

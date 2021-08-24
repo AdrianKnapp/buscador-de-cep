@@ -1,0 +1,20 @@
+:root {
+  --color-input-highlights: #ddc515;
+  font-size: 20px;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+@import 'main';
+@import 'input-group';
+@import 'responsivo';

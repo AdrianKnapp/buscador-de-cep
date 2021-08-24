@@ -1,0 +1,146 @@
+.content-box {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #383838;
+  }
+  .page-subtitle {
+    font-size: .7rem;
+    margin-bottom: 30px;
+    color: lighten(#383838, 20);
+    font-weight: 300;
+  }
+  #address-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    button{
+      padding: 10px 0;
+      width: 100px;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      border: 1px solid #1e1e1e;
+      color: #1e1e1e;
+      margin: 0 auto;
+      background: white;
+      transition: .2s;
+      font-weight: 500;
+      font-size: 0.8rem;
+
+      &:hover {
+        background: #1e1e1e;
+        color: white;
+      }
+    }
+
+    .alert {
+      width: 100%;
+      background: #ffb9bb;
+      font-size: .8rem;
+      border: 1px solid darken(#ffb9bb, 40);
+      color: darken(#ffb9bb, 40);
+      display: none;
+      justify-content: start;
+      align-items: center;
+      padding: 10px 10px;
+      margin-bottom: 30px;
+      position: relative;
+
+      .alert-close {
+        position: absolute;
+        right: 15px;
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+          color: darken(#ffb9bb, 20);
+        }
+      }
+
+      &.ativo {
+        display: flex;
+        animation: alert-animation .5s forwards;
+      }
+    }
+  }
+
+  .address-info-box {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  
+    &.ativo {
+      display: flex;
+      animation: slidedown .5s forwards;
+    }
+    .address-line{
+      display: flex;
+      margin: 2px 0;
+
+      .title-line {
+        font-weight: 600;
+        margin-right: 5px;
+        color: #383838;
+      }
+    }
+  }
+}
+footer {
+  position: absolute;
+  font-size: .7rem;
+  bottom: 0;
+  color: #eee;
+  background-color: #383838;
+  font-weight: 300;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+}
+
+@keyframes alert-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slidedown {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
