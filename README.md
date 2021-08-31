@@ -1,2 +1,2 @@
 ### Try yourself 
-https://adrianknapp.github.io/BuscadorDeCep/
+https://adrianknapp.github.io/buscador-de-cep/
